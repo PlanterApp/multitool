@@ -1,7 +1,7 @@
 name: multitool
 description: "A collection of project-independent Flutter/Dart extension methods and utilities"
 version: 0.0.1
-homepage:
+homepage: https://github.com/PlanterApp/multitool
 
 environment:
   sdk: ^3.5.3
