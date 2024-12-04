@@ -1,3 +1,5 @@
+import 'package:screwdriver/screwdriver.dart';
+
 extension StringExtensions on String {
 
   List<String> csvToList() {
@@ -34,6 +36,11 @@ extension StringExtensions on String {
     } else {
       return this;
     }
+  }
+
+  String camelToSpaceSeparatedSentence() {
+    RegExp exp = RegExp(r'(?<=[a-z])(?=[A-Z])');
+    return replaceAllMapped(exp, (Match m) => ' ${m.group(0)}').capitalized;
   }
 
 }
